@@ -39,7 +39,6 @@ html{
 	height: 100%;
 	width: 100%;
 	margin: 0px;
-	overflow-y: hidden;
 		/*filter: blur(10px);*/
 	/*box-shadow: inset 0px 200px 80px 50px rgb(0,0,0);*/
 }
