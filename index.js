@@ -192,7 +192,6 @@ function onWheel(e) {
     if(number> 200 || number < -200){
     	number =0;
     }
-    console.log(number)
 	//CATALOG
     if( 
     	number == -200 && sliderItem[3].classList[2] === "Head__active_slider_item" 
