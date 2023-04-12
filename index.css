@@ -8,6 +8,28 @@
 	src: url('fonts/Montserrat.ttf');
 }
 
+@keyframes backWapperMenu{
+ 0%{
+ 	background: linear-gradient(45deg, #472d2d,rgb(196, 164, 153,0.5), #472d2d)
+ }
+ 20%{
+ 	background: linear-gradient(45deg, #472d2d, #472d2d, rgb(196, 164, 153,0.5),white, rgb(196, 164, 153,0.5), #472d2d)
+ }
+ 40%{
+ 	background: linear-gradient(45deg, #472d2d,#472d2d,#472d2d, rgb(196, 164, 153,0.5),white, rgb(196, 164, 153,0.5), #472d2d)
+ }
+  60%{
+  	background: linear-gradient(45deg, #472d2d, #472d2d, rgb(196, 164, 153,0.5),white)
+ }
+ 80%{
+ 	background: linear-gradient(45deg,  rgb(196, 164, 153,0.5), #472d2d, #472d2d)
+ }
+  100%{
+  	background: linear-gradient(45deg, #472d2d, rgb(196, 164, 153,0.5), #472d2d)
+ }
+}
+
+
 /*html{
 	background: url("../img/header/headWap.png") no-repeat;
 	background-size: cover;
@@ -123,7 +145,8 @@ header a{
 	position: absolute;
 	display: none;
 	margin-top: 50px;
-	background: #422000;
+	background: linear-gradient(45deg, #472d2d,rgb(196, 164, 153,0.5), #472d2d);
+	animation: 0.2s backWapperMenu linear reverse;
 	border-top: 1px solid rgb(255,255,255,1);
 	border-bottom: 1px solid rgb(255,255,255,1);
 	padding-right: 40px; 
@@ -190,8 +213,9 @@ header a{
 
 .Head__listHead__menu-items__more{
 	position: absolute;
-	background: #422000;
+	background: linear-gradient(45deg, #472d2d,rgb(196, 164, 153,0.5), #472d2d);;
 	border-radius: 0px;
+	animation: 0.2s backWapperMenu linear reverse;
 	margin-top: 40px;
 	border: 2px inset;
 	border-color: black, white;

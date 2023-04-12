@@ -1,3 +1,17 @@
+let btnToBasket = document.querySelectorAll(".popularBlock__catalog_prices-block");
+for(let i =0 ; i <btnToBasket.length; i++){
+	btnToBasket[i].addEventListener('dblclick', function(){
+		location.href='pageBasket/Корзина.html'
+			
+})
+}
+
+let btnToCatalog = document.querySelector(".Head__listHead__menu-items_label");
+
+btnToCatalog.addEventListener('dblclick', function(){
+	location.href='catalog/index.html'
+})
+
 let Block = document.querySelector('html');
 
 let bottomLine = document.querySelector('.popularBlock__bottom-line')
