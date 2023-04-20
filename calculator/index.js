@@ -1,10 +1,8 @@
-
 let btnToCatalog = document.querySelector(".Head__listHead__menu-items_label");
 
 btnToCatalog.addEventListener('dblclick', function(){
 	location.href='../catalog/index.html'
 })
-
 
 
 let Block = document.querySelector('html');
@@ -138,44 +136,25 @@ pageBasketCont.addEventListener('click' , function(){
 	menuCatalogItems[0].style.display = '';
 })
 
-document.addEventListener('keydown', function(event) {
- 	if (event.code == 'KeyZ') {
-     	let container  = document.getElementById('container');
-     	container.innerHTML = `
-     				<p class="contentBasket-block__info-none">В вашей корзине пока нет товаров.</p>
-					<a href="../catalog/index.html" class="contentBasket-block__info__btn-catalog">В каталог</a>
-				`;
-    }
-});
 
-const masProducts = document.querySelectorAll('.contentBasket-block__info-all-profucts_table_content-name-product')
-let quantityProducts = document.querySelectorAll('#quantity');
-let priceProductsOne = document.querySelectorAll('#price_of_one');
-let priceProductsAll = document.querySelectorAll('#price_of_all');
-let priceNds = document.getElementById('price_Nds');
-let priceTotal = document.getElementById('price_Total');
-let priceALL = document.getElementById('price_All');
+/*calculator*/
+const checkBox = document.querySelectorAll('.container-content__block-options__property-check-box');
+const circleBox = document.querySelectorAll('.container-content__block-options__property-check-box-circle');
 
-
-
-//priceProductAll.textContent = +(priceProductOne.textContent.slice(0,-2)) * +(quantityProduct.textContent) + ' ₽';
-for(let i = 0 ; i<masProducts.length; i++){
-	quantityProducts[i].addEventListener('change',function(){
-		if(quantityProducts[i].childNodes[1].value <= 0){
-			priceNds.textContent = 0 + ' ₽';
-			priceALL.textContent = 0 + ' ₽';
-			priceTotal.textContent = priceALL.textContent;
+for(let i = 0 ; i<checkBox.length ; i++){
+	checkBox[i].addEventListener('click', function(){
+		if(checkBox[i].style.animation === '' || checkBox[i].style.animation === '0.5s ease 0s 1 normal forwards running disCheck'){
+			checkBox[i].style.animation = '0.5s activeCheck forwards';
+			circleBox[i].style.animation = '0.5s activeCircle forwards';
 		}else{
-			priceProductsAll[i].textContent = +(priceProductsOne[i].textContent.slice(0,-2)) * +(quantityProducts[i].childNodes[1].value) + ' ₽';
-			priceALL.textContent= (+(priceALL.textContent.slice(0,-2)) +( +(priceProductsOne[i].textContent.slice(0,-2)) * +(quantityProducts[i].childNodes[1].value)));
-			priceNds.textContent = Math.round(priceALL.textContent*0.16)+ ' ₽';
-			priceALL.textContent = priceALL.textContent + ' ₽';
-			priceTotal.textContent = priceALL.textContent;
+			checkBox[i].style.animation = '0.5s disCheck forwards';
+			circleBox[i].style.animation = '0.5s disCircle forwards';
 		}
 	})
-	
-	
 }
 
+let btnToBasket = document.querySelector('.container-content__block-info__detail__btn');
 
-alert('click KeyZ')
+btnToBasket.addEventListener('click',function(){
+	location.href="../pageBasket/Корзина.html"
+})

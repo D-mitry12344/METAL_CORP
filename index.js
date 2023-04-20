@@ -185,31 +185,31 @@ function scrolling(i,block) {
 	
 }						
 
-let number = 0;
+let number =0;
 function onWheel(e) {
     let delta = e.deltaY;
-    number = delta + number 
-    if(number> 200 || number < -200){
-    	number =0;
+    number = number + delta;
+    if(number === 400 || number === -400){
+    	number = 0;
     }
 	//CATALOG
     if( 
-    	number == -200 && sliderItem[3].classList[2] === "Head__active_slider_item" 
-    	||  number == 200 && sliderItem[1].classList[2] === "Head__active_slider_item" 
+    	number === -300 && sliderItem[3].classList[2] === "Head__active_slider_item" 
+    	||  number === 300 && sliderItem[1].classList[2] === "Head__active_slider_item" 
     ){
     	scrolling(2,catalog)
     }else{
 		//STOCKS
 	    if(
-	     	number >= 200 && sliderItem[0].classList[2] === "Head__active_slider_item"
-	     	||  number == -200  && sliderItem[2].classList[2] === "Head__active_slider_item"
+	     	number === 300 && sliderItem[0].classList[2] === "Head__active_slider_item"
+	     	||  number === -300 && sliderItem[2].classList[2] === "Head__active_slider_item"
 	    ){		
 	    	scrolling(1,stocks)
 		}else{
 			//FIRST BANNER DEFAULT
 				if(
-			    	number == -200 && sliderItem[1].classList[2] === "Head__active_slider_item"
-			    	||  number >= 200 && sliderItem[7].classList[2] === "Head__active_slider_item" 
+			    	number === -300 && sliderItem[1].classList[2] === "Head__active_slider_item"
+			    	||  number === 300 && sliderItem[7].classList[2] === "Head__active_slider_item"
 			    ){
 			    	scrolling(0,bannerHead);
 			    	sliderItem.forEach(function(item){
@@ -219,22 +219,22 @@ function onWheel(e) {
 			    }else{
 				    	//SERVICES		
 					if(
-				     	number >= 200 && sliderItem[2].classList[2] === "Head__active_slider_item"
-				     	||  number == -200 && sliderItem[4].classList[2] === "Head__active_slider_item"
+				     	number === 300 && sliderItem[2].classList[2] === "Head__active_slider_item"
+				     	||  number === -300 && sliderItem[4].classList[2] === "Head__active_slider_item"
 				    ){		
 				    	scrolling(3,services)
 					}else{
 					//USEFUL
 						if(
-				     	number >= 200 && sliderItem[4].classList[2] === "Head__active_slider_item"
-				     	||  number == -200 && sliderItem[6].classList[2] === "Head__active_slider_item"
+				     	number === 300 && sliderItem[4].classList[2] === "Head__active_slider_item"
+				     	||  number === -300 && sliderItem[6].classList[2] === "Head__active_slider_item"
 						){		
 							scrolling(5,useful)
 						}else{
 							//NEWS
 							 if(
-					     	number >= 200 && sliderItem[3].classList[2] === "Head__active_slider_item"
-					     	||  number == -200 && sliderItem[5].classList[2] === "Head__active_slider_item"
+					     	number === 300 && sliderItem[3].classList[2] === "Head__active_slider_item"
+					     	||  number === -300 && sliderItem[5].classList[2] === "Head__active_slider_item"
 							){		
 							 	scrolling(4,news);
 							 	sliderItem.forEach(function(item){
@@ -244,8 +244,8 @@ function onWheel(e) {
 							}
 							//FOOTER
 							if(
-					     	number >= 200 && sliderItem[6].classList[2] === "Head__active_slider_item"
-					     	||  number == -200 && sliderItem[0].classList[2] === "Head__active_slider_item"
+					     	number === 300 && sliderItem[6].classList[2] === "Head__active_slider_item"
+					     	||  number === -300 && sliderItem[0].classList[2] === "Head__active_slider_item"
 							){		
 								scrolling(7,menuFooter);
 								sliderItem.forEach(function(item){
@@ -255,8 +255,8 @@ function onWheel(e) {
 							}else{
 									//PARTHERS
 								if( 
-						     	number >= 200 && sliderItem[5].classList[2] === "Head__active_slider_item"
-						     	||  number == -200 && sliderItem[7].classList[2] === "Head__active_slider_item"
+						     	number === 300 && sliderItem[5].classList[2] === "Head__active_slider_item"
+						     	||  number === -300 && sliderItem[7].classList[2] === "Head__active_slider_item"
 								){		
 									scrolling(6,parthers)
 								}	
@@ -268,7 +268,7 @@ function onWheel(e) {
 				}
 		}
 	}	
-	return number	
+	return number;	
 }
 
 

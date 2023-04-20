@@ -78,7 +78,7 @@ header a{
 
 .Head__menuHead{
 	display: flex;
-	background: #ECECEC;
+	border-bottom: 1px solid #ECECEC; 
 	padding-bottom: 15px;
 }
 
@@ -496,6 +496,11 @@ header a{
 	margin-left: 90px;
 	margin-top: 190px;
 	transition-duration: 0.4s;
+}
+
+.contentBasket-block__info-footer__btn-catalog_text{
+	color:white;
+	text-decoration: none;
 }
 
 .contentBasket-block__info-footer__btn-catalog:hover, .contentBasket-block__info-footer_price__btn:hover{

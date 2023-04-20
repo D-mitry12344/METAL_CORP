@@ -405,53 +405,15 @@ header a{
 
 /*container*/
 
-.container__categories{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.container__categories__product{
-	width: 300px;
-	margin-left: 280px;
-	margin-right:  auto;
-	margin-top: 100px;
-}
-
-.container__categories__product__name{
+.container-content{
+	margin-left: 70px;
+	margin-top: 60px;
 	font-family: 'Montserrat';
 	font-style: normal;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 22px;
-	display: flex;
-}
-
-.container__categories__product__variants-lists{
-	margin:0;
-	padding: 0;
-}
-
-.container__categories__product__variants-lists_item{
-	list-style: none;
-	margin: 0;
-	padding-top: 10px;
-}
-
-.container__categories__product__variants-lists_item-href{
-	font-family: 'Lato';
-	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 17px;
-	text-decoration: none;
-	color: black;
-	border-bottom: 1px dashed black;
+	font-size: 16px;
+	line-height: 24px;
 }
-
-.container__categories__product__variants-lists_item-href:hover{
-	opacity: 0.7;
-}
-
 /*FOOTER*/
 .menu-footer{
 	margin-top: 200px;

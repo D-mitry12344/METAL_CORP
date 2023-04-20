@@ -10,7 +10,7 @@
 			<div class="Head__menuHead">
 					<div class="Head__menuHead__block-logo">
 						<a href="../index.html">
-							<img class="Head__menuHead__block-logo__img" src="images/logoBlack.svg"/>
+							<img class="Head__menuHead__block-logo__img" src="../catalog/images/logoBlack.svg"/>
 						</a>
 					</div>
 					<div class="Head__menuHead__regionHead">
@@ -22,7 +22,7 @@
 							<li class="Head__menuHead__regionHead__menu_item" id="region_myself">Москва</li>
 							<li class="Head__menuHead__regionHead__menu_item" id="region_myself">Ооо, Питер</li>
 						</ul>
-						<img class="Head__menuHead__regionHead__line" src="images/Line.svg"/>
+						<img class="Head__menuHead__regionHead__line" src="../catalog/images/Line.svg"/>
 					</div>
 					<div class="Head__listHead">
 						<ul class="Head__listHead__menu">
@@ -48,7 +48,7 @@
 										<li class="Head__listHead__menu-items__more-href_name">Некондиция</li>
 									</a>
 								</ul>
-								<img class="Head__listHead__menu-items-more_line" src="images/Line.svg"/>
+								<img class="Head__listHead__menu-items-more_line" src="../catalog/images/Line.svg"/>
 							</li>
 							<li class="Head__listHead__menu-items Head__listHead__menu-items-service" id="menu_catalog">
 								<label class="Head__listHead__menu-items_label">Услуги</label>
@@ -69,13 +69,13 @@
 										<li class="Head__listHead__menu-items__more-href_name">Некондиция</li>
 									</a>
 								</ul>
-								<img  class="Head__listHead__menu-items-more_line" src="images/Line.svg"/>
+								<img  class="Head__listHead__menu-items-more_line" src="../catalog/images/Line.svg"/>
 							</li>
 							<li class="Head__listHead__menu-items Head__listHead__menu-items-info">
 								<a href="#">Справочник</a>
 							</li>
 							<li class="Head__listHead__menu-items Head__listHead__menu-items-calc">
-								<a href="../calculator/index.html">Калькуляторы</a>
+								<a href="#">Калькуляторы</a>
 							</li>
 							<li class="Head__listHead__menu-items Head__listHead__menu-items-company">
 								<a href="../company/index.html">О компании</a>
@@ -91,13 +91,13 @@
 						<p class="Head__menuHead__menu_language-item Head__menuHead__menu_language-eng Head__menuHead__menu_language-disabled">ENG</p>
 					</div>
 					<div class="Head__menuHead__menu_phone">
-						<img class="Head__menuHead__menu_phone-img" src="images/phoneIcon.svg"/>
+						<img class="Head__menuHead__menu_phone-img" src="../catalog/images/phoneIcon.svg"/>
 						<p class="Head__menuHead__menu_phone-number">+7 (347) 287-77-78</p>
 					</div>
 					<div class="Head__menuHead__menu_user">
-						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-basket" href="#"><img class="Head__menuHead__menu_user-href_img" src="images/basketIcon.svg"/></a>
-						<a class="Head__menuHead__menu_user-href" href="#"><img class="Head__menuHead__menu_user-href_img" src="images/userIcon.svg"/></a>
-						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-search" href="#"><img class="Head__menuHead__menu_user-href_img" src="images/searchIcon.svg"/></a>
+						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-basket" href="../pageBasket/Корзина.html"><img class="Head__menuHead__menu_user-href_img" src="../catalog/images/basketIcon.svg"/></a>
+						<a class="Head__menuHead__menu_user-href" href="#"><img class="Head__menuHead__menu_user-href_img" src="../catalog/images/userIcon.svg"/></a>
+						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-search" href="#"><img class="Head__menuHead__menu_user-href_img" src="../catalog/images/searchIcon.svg"/></a>
 					</div>
 				</div>
 		</header>
@@ -105,83 +105,78 @@
 			<section class="navigation-pages">
 				<div class="navigation-pages__block">
 					<a class="navigation-pages__block-href" href="../index.html">Главная -</a>
-					<a class="navigation-pages__block-href" href="#">Корзина</a>
+					<a class="navigation-pages__block-href" href="#">Калькулятор</a>
 				</div>
 			</section>
-			<section  class="contentBasket">
-				<div  class="contentBasket-block">
-					<div class="contentBasket-block__name">
-						<p class="contentBasket-block__name-text">Корзина</p>
-					</div>
-					<div id="container" class="contentBasket-block__info">
-						<div  class="contentBasket-block__info-all-profucts">
-							<table class="contentBasket-block__info-all-profucts_table">
-								<thead class="contentBasket-block__info-all-profucts_table_head">
-									<tr class="contentBasket-block__info-all-profucts_table_head-name">
-										<td class="contentBasket-block__info-all-profucts_table_head-name_list">№</td>
-										<td class="contentBasket-block__info-all-profucts_table_head-name_list">Наименование товара</td>
-										<td class="contentBasket-block__info-all-profucts_table_head-name_list">Единица</td>
-										<td class="contentBasket-block__info-all-profucts_table_head-name_list">Количество</td>
-										<td class="contentBasket-block__info-all-profucts_table_head-name_list">Цена с НДС</td>
-										<td class="contentBasket-block__info-all-profucts_table_head-name_list">Сумма</td>
-										<td class="contentBasket-block__info-all-profucts_table_head-name_list contentBasket-block__info-all-profucts_table_head-name_list-none"></td>
-									</tr>
-								</thead>
-								<tbody id="block_product" class="contentBasket-block__info-all-profucts_table_content">
-									<tr class="contentBasket-block__info-all-profucts_table_content-name-product">
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">1</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">Наименование одного товара</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">шт</td>
-										<td id="quantity" class="contentBasket-block__info-all-profucts_table_content-name_list">
-											<input value='0' class="contentBasket-block__info-all-profucts_table_content-name_list-input" type='number'> 
-										</td>
-										<td id="price_of_one" class="contentBasket-block__info-all-profucts_table_content-name_list">1040 ₽</td>
-										<td id="price_of_all" class="contentBasket-block__info-all-profucts_table_content-name_list">2 080 ₽</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list contentBasket-block__info-all-profucts_table_content-name_clear">
-											<img src="images/trash.svg">
-										</td>
-									</tr>
-									<tr class="contentBasket-block__info-all-profucts_table_content-name-product">
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">1</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">Наименование одного товара</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">шт</td>
-										<td id="quantity" class="contentBasket-block__info-all-profucts_table_content-name_list">
-											<input value='0' class="contentBasket-block__info-all-profucts_table_content-name_list-input" type='number'> 
-										</td>
-										<td id="price_of_one" class="contentBasket-block__info-all-profucts_table_content-name_list">1040 ₽</td>
-										<td id="price_of_all" class="contentBasket-block__info-all-profucts_table_content-name_list">2 080 ₽</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list contentBasket-block__info-all-profucts_table_content-name_clear">
-											<img src="images/trash.svg">
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div  class="contentBasket-block__info-footer">
-							<div class="contentBasket-block__info-footer__btn-catalog">
-								<a href="../catalog/index.html" class="contentBasket-block__info-footer__btn-catalog_text">В каталог</a>
+			<section class="name-search-block">
+				<div class="name-search-block__name">
+					<p class="name-search-block__name-text">Плитный фундамент</p>
+				</div>
+			</section>
+			<section class="container">
+				<div class="container-content">
+					<div class="container-content__block-options">
+						<p class="container-content__block-options__title">Исходные данные</p>
+						<div class="container-content__block-options__property">
+							<p class="container-content__block-options__property-header">Размеры фундамента</p>
+							<div class="container-content__block-options__property-block container-content__block-options__property-length">
+								<label  class="container-content__block-options__property-length-text container-content__block-options__property-text">Длина А</label>
+								<input  class="container-content__block-options__property-length-number container-content__block-options__property-number" type="number">
 							</div>
-							<div class="contentBasket-block__info-footer_price">
-								<table class="contentBasket-block__info-footer_price__table">
-									<tbody class="contentBasket-block__info-footer_price__table_content">
-										<tr class="contentBasket-block__info-footer_price__table_content_value">
-											<td class="contentBasket-block__info-footer_price__table_content_value-name">Итог:</td>
-											<td id="price_Total" class="contentBasket-block__info-footer_price__table_content_value-nominal"></td>
-										</tr>
-										<tr class="contentBasket-block__info-footer_price__table_content_value">
-											<td class="contentBasket-block__info-footer_price__table_content_value-name">НДС:</td>
-											<td id="price_Nds" class="contentBasket-block__info-footer_price__table_content_value-nominal"></td>
-										</tr>
-										<tr class="contentBasket-block__info-footer_price__table_content_value">
-											<td class="contentBasket-block__info-footer_price__table_content_value-name">Всего:</td>
-											<td id="price_All" class="contentBasket-block__info-footer_price__table_content_value-nominal"></td>
-										</tr>
-									</tbody>
-								</table>
-								<div class="contentBasket-block__info-footer_price__btn">
-									<p class="contentBasket-block__info-footer_price__btn_text">Выписать счет</p>
+							<div class="container-content__block-options__property-block container-content__block-options__property-width">
+								<label class="container-content__block-options__property-width-text container-content__block-options__property-text">Ширина В</label>
+								<input class="container-content__block-options__property-width-number container-content__block-options__property-number" type="number">
+							</div>
+							<div class="container-content__block-options__property-block container-content__block-options__property-height">
+								<label class="container-content__block-options__property-height-text container-content__block-options__property-text">Высота H</label>
+								<input class="container-content__block-options__property-height-number container-content__block-options__property-number" type="number">
+							</div>
+							<div class="container-content__block-options__property-check">
+								<label class="container-content__block-options__property-check-text">Считать опалубку</label>
+								<div class="container-content__block-options__property-check-box">
+									<div class="container-content__block-options__property-check-box-circle"></div>
 								</div>
 							</div>
+							<div class="container-content__block-options__property-check">
+								<label class="container-content__block-options__property-check-text">Считать арматуру</label>
+								<div class="container-content__block-options__property-check-box">
+									<div class="container-content__block-options__property-check-box-circle"></div>
+								</div>
+							</div>
+							<div class="container-content__block-options__property-check">
+								<label class="container-content__block-options__property-check-text">Изготовление бетона вручную</label>
+								<div class="container-content__block-options__property-check-box">
+									<div class="container-content__block-options__property-check-box-circle"></div>
+								</div>
+							</div>
+						</div>
+						<button class="container-content__block-options__btn">
+								<p class="container-content__block-options__btn-text">Рассчитать</p>
+						</button>
+					</div>
+					<div class="container-content__block-info">
+						<div class="container-content__block-info__product">
+							<img class="container-content__block-info__product-img" src="images/self.svg">
+						</div>
+						<div class="container-content__block-info__detail">
+							<p class="container-content__block-info__detail-title">Результат расчета</p>
+							<p class="container-content__block-info__detail-header">Плита</p>
+							<div class="container-content__block-info__detail-square container-content__block-info__detail-block">
+								<p class="container-content__block-info__detail-square-name container-content__block-info__detail-block-name">Площадь основания</p>
+								<p class="container-content__block-info__detail-square-value container-content__block-info__detail-block-value">100 м3</p>
+							</div>
+							<div class="container-content__block-info__detail-perimeter container-content__block-info__detail-block">
+								<p class="container-content__block-info__detail-perimeter-name container-content__block-info__detail-block-name">Периметр плиты</p>
+								<p class="container-content__block-info__detail-perimeter-value container-content__block-info__detail-block-value">40м3</p>
+							</div>
+							<p class="container-content__block-info__detail-header">Бетон</p>
+							<div class="container-content__block-info__detail-volume container-content__block-info__detail-block">
+								<p class="container-content__block-info__detail-volume-name container-content__block-info__detail-block-name">Объем</p>
+								<p class="container-content__block-info__detail-volume-value container-content__block-info__detail-block-value">30 м3</p>
+							</div>
+							<button class="container-content__block-info__detail__btn">
+								<p class="container-content__block-info__detail__btn-text">Добавить в корзину</p>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -191,7 +186,7 @@
 			<div class="menu-footer__info">
 				<div class="menu-footer__logo">
 					<a href="../index.html">
-						<img src="images/logoBlack.svg">
+						<img src="../catalog/images/logoBlack.svg">
 					</a>
 				</div>
 				<div class="menu-footer__items">
@@ -200,7 +195,7 @@
 						<a href="#" class="menu-footer__items-list_text">Спецпредложения</a>
 					</div>
 					<div class="menu-footer__items-list" >
-						<a href="../catalog/index.html" class="menu-footer__items-list_text">Каталог</a>
+						<a href="#" class="menu-footer__items-list_text">Каталог</a>
 						<a href="#" class="menu-footer__items-list_text">Услуги и сервис</a>
 					</div>
 					<div class="menu-footer__items-list">
@@ -232,5 +227,4 @@
 		</footer>
 	</body>
 	<script src="index.js"></script>
-	<script src="../indexToBasket.js"></script>
 </html>
