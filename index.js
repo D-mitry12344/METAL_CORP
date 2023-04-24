@@ -189,7 +189,7 @@ let number =0;
 function onWheel(e) {
     let delta = e.deltaY;
     number = number + delta;
-    if(number === 400 || number === -400){
+    if(number >= 400 || number <= -400){
     	number = 0;
     }
 	//CATALOG
@@ -268,6 +268,7 @@ function onWheel(e) {
 				}
 		}
 	}	
+	console.log(number)
 	return number;	
 }
 
