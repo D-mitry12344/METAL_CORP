@@ -8,7 +8,7 @@
 	src: url('../fonts/Montserrat.ttf');
 }
 
-
+@media (min-width: 500px){
 
 
 @keyframes backWapperMenu{
@@ -95,7 +95,7 @@ header a{
 	font-size: 14px;
 	/*margin-left: 157px;*/
 	margin-left: 30px;
-	margin-right: 0px;
+	margin-right: 50px;
 	cursor: pointer;
 }
 
@@ -325,43 +325,6 @@ header a{
 	font-size: 24px;
 	line-height: 29px;
 }
-
-.contentBasket-block__info-none{
-	width: 19em;
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 29px;
-	margin-right: auto;
-	margin-left: auto;
-	color: #000000;
-}
-
-.contentBasket-block__info__btn-catalog{
-	width: 4.8em;
-	height: 2em;
-	padding: /*40px*/0.5% 2.3%;
-	margin-right: auto;
-	margin-left: auto;
-	background: #C0511F;
-	color: white;
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 17px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	text-decoration: none;
-	transition-duration: 0.3s;
-}
-
-.contentBasket-block__info__btn-catalog:hover{
-	opacity: 0.7;
-}
-
 /*name and search*/
 
 .name-search-block__name{
@@ -374,8 +337,9 @@ header a{
 }
 
 .name-search-block__block-img{
-	margin-left: 300px;
-	margin-right: auto;
+	width: 60%;
+	margin-left: auto;
+	margin-right: 100px;
 }
 
 .name-search-block__block-img_icon{
@@ -538,4 +502,6 @@ header a{
 	margin-left: auto;
 	margin-right: 0px;
 	margin-top: 38px;
+}
+
 }

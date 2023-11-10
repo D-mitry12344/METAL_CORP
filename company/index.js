@@ -1,3 +1,27 @@
+const headBurger = document.querySelector('.Head__burger');
+const headBurgerItem = document.querySelectorAll('.Head__burger-item');
+const headListHead = document.querySelector('.Head__listHead')
+headBurger.addEventListener('click', function(){
+	if(headListHead.style.display === ""){
+		headBurger.style.marginTop="140px";
+		headBurger.style.marginLeft="325px";
+		headBurgerItem[0].style.animation = '0.5s burgerItem forwards'; 
+		headBurgerItem[1].style.animation = '0.5s burgerItem forwards'; 
+		headBurgerItem[2].style.animation = '0.5s burgerThrid forwards'; 
+		headListHead.style.display="block";
+		headListHead.style.marginTop="110px";
+	}else{
+		headBurgerItem[0].style.animation = ' 0.5s burgerItemRev forwards '; 
+		headBurgerItem[1].style.animation = ' 0.5s burgerItemRev forwards'; 
+		headBurgerItem[2].style.animation = ' 0.5s burgerThridRev forwards'; 
+		headListHead.style.display = "";
+		headBurger.style.marginTop="";
+		headBurger.style.marginLeft="";
+	}
+	
+})
+
+
 let btnToCatalog = document.querySelector(".Head__listHead__menu-items_label");
 
 btnToCatalog.addEventListener('dblclick', function(){
@@ -5,28 +29,6 @@ btnToCatalog.addEventListener('dblclick', function(){
 })
 
 let Block = document.querySelector('html');
-
-let bottomLine = document.querySelector('.popularBlock__bottom-line')
-let bottomLineActive = document.querySelector('.popularBlock__bottom-line-active')
-
-/*bottomLine.addEventListener('mousemove', function(){
-	//bottomLineActive.addEventListener('mouseover', function(){
-		let ger = event.clientX;
-		
-		bottomLineActive.style.marginLeft= ger/20 + '%';
-		if(bottomLineActive.style.marginLeft.slice(0,2) < 12  || bottomLineActive.style.marginLeft.slice(0,2) < 13 || bottomLineActive.style.marginLeft.slice(0,2) < 14){
-			bottomLineActive.style.marginLeft = '';
-		}
-	//})
-	
-
-	if(ger >= 618){
-		bottomLineActive.style.marginLeft= 580+ 'px';
-	}
-	if(ger <= 265){
-		bottomLineActive.style.marginLeft= '';
-	}
-})*/
 
 
 let BlockHeadFirst = document.querySelector('.Head__banner_all_head');
@@ -54,14 +56,6 @@ menuCatalog[1].addEventListener("click", function(){
 		
 	}
 })
-
-/*
-BlockHeadFirst.addEventListener('click' , function(){
-		menuCatalogItems[1].style.display = '';
-		regions.style.display = '';
-		menuCatalogItems[0].style.display = '';
-})*/
-	
 
 
 

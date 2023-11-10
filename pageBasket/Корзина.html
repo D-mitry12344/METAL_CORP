@@ -3,7 +3,11 @@
 	<head>
 		<meta chatset="utf-8">
 		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="../pageMobile/mobile.css">
+		<link rel="stylesheet" href="mobile.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>МеталлВектор - Коризна</title>
+		<link rel="shortcut icon" href="../favicon/basket.png" type="image/x-icon">
 	</head>
 	<body>
 		<header>
@@ -23,6 +27,11 @@
 							<li class="Head__menuHead__regionHead__menu_item" id="region_myself">Ооо, Питер</li>
 						</ul>
 						<img class="Head__menuHead__regionHead__line" src="images/Line.svg"/>
+					</div>
+					<div class="Head__burger">
+						<div class="Head__burger-item Head__burger-item-first"></div>
+						<div class="Head__burger-item Head__burger-item-second"></div>
+						<div class="Head__burger-item Head__burger-item-thrid"></div>
 					</div>
 					<div class="Head__listHead">
 						<ul class="Head__listHead__menu">
@@ -95,7 +104,7 @@
 						<p class="Head__menuHead__menu_phone-number">+7 (347) 287-77-78</p>
 					</div>
 					<div class="Head__menuHead__menu_user">
-						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-basket" href="#"><img class="Head__menuHead__menu_user-href_img" src="images/basketIcon.svg"/></a>
+						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-basket" href="#"><img class="Head__menuHead__menu_user-href_img Head__menuHead__menu_user-href_img-basket" src="images/basketIcon.svg"/></a>
 						<a class="Head__menuHead__menu_user-href" href="../cabinet/index.html"><img class="Head__menuHead__menu_user-href_img" src="images/userIcon.svg"/></a>
 						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-search" href="#"><img class="Head__menuHead__menu_user-href_img" src="images/searchIcon.svg"/></a>
 					</div>
@@ -130,27 +139,29 @@
 								<tbody id="block_product" class="contentBasket-block__info-all-profucts_table_content">
 									<tr class="contentBasket-block__info-all-profucts_table_content-name-product">
 										<td class="contentBasket-block__info-all-profucts_table_content-name_list">1</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">Наименование одного товара</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">шт</td>
-										<td id="quantity" class="contentBasket-block__info-all-profucts_table_content-name_list">
-											<input value='0' class="contentBasket-block__info-all-profucts_table_content-name_list-input" type='number'> 
+										<td class="contentBasket-block__info-all-profucts_table_content-name_list">Лист рифленый 2.5*1200*300 к.50 300.00 ромб</td>
+										<td class="contentBasket-block__info-all-profucts_table_content-name_list contentBasket-block__info-all-profucts_table_content-name_list-input-name">шт</td>
+										<td id="quantity" class="contentBasket-block__info-all-profucts_table_content-name_list contentBasket-block__info-all-profucts_table_content-name_list-input_parent">
+											<input value='2' class="contentBasket-block__info-all-profucts_table_content-name_list-input" type='number'> 
 										</td>
-										<td id="price_of_one" class="contentBasket-block__info-all-profucts_table_content-name_list">1040 ₽</td>
-										<td id="price_of_all" class="contentBasket-block__info-all-profucts_table_content-name_list">2 080 ₽</td>
+										<td id="price_of_one" class="contentBasket-block__info-all-profucts_table_content-name_list contentBasket-block__info-all-profucts_table_content-name_list-NDS">1040 ₽</td>
+										<td id="price_of_all" class="contentBasket-block__info-all-profucts_table_content-name_list">0 ₽</td>
 										<td class="contentBasket-block__info-all-profucts_table_content-name_list contentBasket-block__info-all-profucts_table_content-name_clear">
 											<img src="images/trash.svg">
 										</td>
 									</tr>
 									<tr class="contentBasket-block__info-all-profucts_table_content-name-product">
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">1</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">Наименование одного товара</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list">шт</td>
-										<td id="quantity" class="contentBasket-block__info-all-profucts_table_content-name_list">
-											<input value='0' class="contentBasket-block__info-all-profucts_table_content-name_list-input" type='number'> 
+										<td class="contentBasket-block__info-all-profucts_table_content-name_list">2</td>
+										<td class="contentBasket-block__info-all-profucts_table_content-name_list">Лист рифленый 2.5*1200*300 к.50 300.00 ромб</td>
+										<td class="contentBasket-block__info-all-profucts_table_content-name_list 	contentBasket-block__info-all-profucts_table_content-name_list-input-name">шт</td>
+										<td id="quantity" class="contentBasket-block__info-all-profucts_table_content-name_list
+											contentBasket-block__info-all-profucts_table_content-name_list-input_parent">
+											<input value='1' class="contentBasket-block__info-all-profucts_table_content-name_list-input" type='number'> 
 										</td>
-										<td id="price_of_one" class="contentBasket-block__info-all-profucts_table_content-name_list">1040 ₽</td>
-										<td id="price_of_all" class="contentBasket-block__info-all-profucts_table_content-name_list">2 080 ₽</td>
-										<td class="contentBasket-block__info-all-profucts_table_content-name_list contentBasket-block__info-all-profucts_table_content-name_clear">
+										<td id="price_of_one" class="contentBasket-block__info-all-profucts_table_content-name_list
+											contentBasket-block__info-all-profucts_table_content-name_list-NDS">1040 ₽</td>
+										<td id="price_of_all" class="contentBasket-block__info-all-profucts_table_content-name_list">0 ₽</td>
+										<td class="contentBasket-block__info-all-profucts_table_content-name_list 	contentBasket-block__info-all-profucts_table_content-name_clear">
 											<img src="images/trash.svg">
 										</td>
 									</tr>
@@ -158,9 +169,9 @@
 							</table>
 						</div>
 						<div  class="contentBasket-block__info-footer">
-							<div class="contentBasket-block__info-footer__btn-catalog">
-								<a href="../catalog/index.html" class="contentBasket-block__info-footer__btn-catalog_text">В каталог</a>
-							</div>
+							<a href="../catalog/index.html" class="contentBasket-block__info-footer__btn-catalog contentBasket-block__info-footer__btn-catalog_text">
+								В каталог
+							</a>
 							<div class="contentBasket-block__info-footer_price">
 								<table class="contentBasket-block__info-footer_price__table">
 									<tbody class="contentBasket-block__info-footer_price__table_content">

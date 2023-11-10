@@ -1,4 +1,25 @@
-
+const headBurger = document.querySelector('.Head__burger');
+const headBurgerItem = document.querySelectorAll('.Head__burger-item');
+const headListHead = document.querySelector('.Head__listHead')
+headBurger.addEventListener('click', function(){
+	if(headListHead.style.display === ""){
+		headBurger.style.marginTop="140px";
+		headBurger.style.marginLeft="325px";
+		headBurgerItem[0].style.animation = '0.5s burgerItem forwards'; 
+		headBurgerItem[1].style.animation = '0.5s burgerItem forwards'; 
+		headBurgerItem[2].style.animation = '0.5s burgerThrid forwards'; 
+		headListHead.style.display="block";
+		headListHead.style.marginTop="110px";
+	}else{
+		headBurgerItem[0].style.animation = ' 0.5s burgerItemRev forwards '; 
+		headBurgerItem[1].style.animation = ' 0.5s burgerItemRev forwards'; 
+		headBurgerItem[2].style.animation = ' 0.5s burgerThridRev forwards'; 
+		headListHead.style.display = "";
+		headBurger.style.marginTop="";
+		headBurger.style.marginLeft="";
+	}
+	
+})
 
 let Block = document.querySelector('html');
 

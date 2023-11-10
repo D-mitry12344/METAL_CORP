@@ -3,7 +3,10 @@
 	<head>
 		<meta chatset="utf-8">
 		<link rel="stylesheet" href="index.css">
-		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="mobile.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>МеталлВектор - Главная</title>
+		<link rel="shortcut icon" href="favicon/main.png" type="image/x-icon">
 	</head>
 	<body>
 		<header>
@@ -14,9 +17,9 @@
 							<img class="Head__menuHead__block-logo__img" src="img/header/logoWhite.png"/>
 						</a>
 					</div>
-					<div class="Head__menuHead__regionHead">
-						<div class="Head__menuHead__regionHead__marker"></div>
-						<p class="Head__menuHead__regionHead__region" id="region_menu">Уфа</p>
+					<div tabindex="0" class="Head__menuHead__regionHead">
+						<div  class="Head__menuHead__regionHead__marker"></div>
+						<p  class="Head__menuHead__regionHead__region" id="region_menu">Уфа</p>
 						<ul class="Head__menuHead__regionHead__menu" id="regions">
 							<li class="Head__menuHead__regionHead__menu_item" id="region_myself">Уфа</li>
 							<li class="Head__menuHead__regionHead__menu_item" id="region_myself">Москва</li>
@@ -25,34 +28,39 @@
 						</ul>
 						<img class="Head__menuHead__regionHead__line" src="img/header/Line.svg"/>
 					</div>
+					<div class="Head__burger">
+						<div class="Head__burger-item Head__burger-item-first"></div>
+						<div class="Head__burger-item Head__burger-item-second"></div>
+						<div class="Head__burger-item Head__burger-item-thrid"></div>
+					</div>
 					<div class="Head__listHead">
 						<ul class="Head__listHead__menu">
 							<li class="Head__listHead__menu-items Head__listHead__menu-items-catalog" id="menu_catalog">
-								<label class="Head__listHead__menu-items_label">Каталог</label>
+								<label role="button"  class="Head__listHead__menu-items_label">Каталог</label>
 								<ul class="Head__listHead__menu-items__more" id="menu_catalog_items">
-									<a class="Head__listHead__menu-items__more-href" href="#">
+									<a class="Head__listHead__menu-items__more-href" href="catalog/index.html">
 										<li class="Head__listHead__menu-items__more-href_name">Металлопрокат</li>
 									</a>
-									<a class="Head__listHead__menu-items__more-href" href="#">
+									<a class="Head__listHead__menu-items__more-href" href="catalog/index.html">
 										<li class="Head__listHead__menu-items__more-href_name">Кровля</li>
 									</a>
-									<a class="Head__listHead__menu-items__more-href" href="#">
+									<a class="Head__listHead__menu-items__more-href" href="catalog/index.html">
 										<li class="Head__listHead__menu-items__more-href_name">Фасад</li>
 									</a>
-									<a class="Head__listHead__menu-items__more-href" href="#">
+									<a class="Head__listHead__menu-items__more-href" href="catalog/index.html">
 										<li class="Head__listHead__menu-items__more-href_name">Ограждающие системы</li>
 									</a>
-									<a class="Head__listHead__menu-items__more-href" href="#">
+									<a class="Head__listHead__menu-items__more-href" href="catalog/index.html">
 										<li class="Head__listHead__menu-items__more-href_name">Прочие</li>
 									</a>
-									<a class="Head__listHead__menu-items__more-href" href="#">
+									<a class="Head__listHead__menu-items__more-href" href="catalog/index.html">
 										<li class="Head__listHead__menu-items__more-href_name">Некондиция</li>
 									</a>
 								</ul>
 								<img class="Head__listHead__menu-items-more_line" src="img/header/Line.svg"/>
 							</li>
 							<li class="Head__listHead__menu-items Head__listHead__menu-items-service" id="menu_catalog">
-								<label class="Head__listHead__menu-items_label">Услуги</label>
+								<label role="button" class="Head__listHead__menu-items_label">Услуги</label>
 								<ul class="Head__listHead__menu-items__more" id="menu_catalog_items">
 									<a class="Head__listHead__menu-items__more-href" href="#">
 										<li class="Head__listHead__menu-items__more-href_name">Лазерная резка металла</li>
@@ -96,9 +104,15 @@
 						<p class="Head__menuHead__menu_phone-number">+7 (347) 287-77-78</p>
 					</div>
 					<div class="Head__menuHead__menu_user">
-						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-basket" href="pageBasket/Корзина.html"><img class="Head__menuHead__menu_user-href_img" src="img/header/basketIcon.svg"/></a>
-						<a class="Head__menuHead__menu_user-href" href="cabinet/index.html"><img class="Head__menuHead__menu_user-href_img" src="img/header/userIcon.svg"/></a>
-						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-search" href="#"><img class="Head__menuHead__menu_user-href_img" src="img/header/searchIcon.svg"/></a>
+						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-basket" href="pageBasket/Корзина.html">
+							<img class="Head__menuHead__menu_user-href_img-basket" src="img/header/basketIcon.svg"/>
+						</a>
+						<a class="Head__menuHead__menu_user-href" href="cabinet/index.html">
+							<img class="Head__menuHead__menu_user-href_img" src="img/header/userIcon.svg"/>
+						</a>
+						<a class="Head__menuHead__menu_user-href Head__menuHead__menu_user-search" href="#">
+							<img class="Head__menuHead__menu_user-href_img Head__menuHead__menu_user-href_img" src="img/header/searchIcon.svg"/>
+						</a>
 					</div>
 				</div>
 				<div class="Head__banner_all_head">
@@ -152,203 +166,6 @@
 			</div>
 		</header>
 		<main>
-			<section id="catalog">
-				<div class="popularBlock">
-					<div class="popularBlock__header">
-						<h2 class="popularBlock__header-name">Популярное</h2>
-						<a class="popularBlock__header-href" href="catalog/index.html">
-							<p class="popularBlock__header-href_text">Каталог</p>
-							<img class="popularBlock__header-href_img" src="img/popular/Line.png">
-						</a>
-					</div>
-					<div class="popularBlock__block-catalog">
-						<div class="popularBlock__all-catalog">
-							<div class="popularBlock__catalog">
-								<div class="popularBlock__catalog-block">
-									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
-								</div>
-								<div class="popularBlock__catalog_text">
-									<p class="popularBlock__catalog_articul">Артикул 23936</p>
-									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
-									<div class="popularBlock__catalog_info_price">
-										<div class="popularBlock__catalog_prices">
-											<p class="popularBlock__catalog_prices-piece">2 502 
-												<sup class="popularBlock__catalog_prices-sup">40</sup>
-												 / шт.
-											</p>
-											<p class="popularBlock__catalog_prices-ton">72 864 
-												<sup class="popularBlock__catalog_prices-sup">00</sup>
-												 / т.
-											</p>
-										</div>
-										<a href="catalog/index.html" class="popularBlock__catalog_prices-block">
-											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="popularBlock__catalog">
-								<div class="popularBlock__catalog-block">
-									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
-								</div>
-								<div class="popularBlock__catalog_text">
-									<p class="popularBlock__catalog_articul">Артикул 23936</p>
-									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
-									<div class="popularBlock__catalog_info_price">
-										<div class="popularBlock__catalog_prices">
-											<p class="popularBlock__catalog_prices-piece">2 502 
-												<sup class="popularBlock__catalog_prices-sup">40</sup>
-												 / шт.
-											</p>
-											<p class="popularBlock__catalog_prices-ton">72 864 
-												<sup class="popularBlock__catalog_prices-sup">00</sup>
-												 / т.
-											</p>
-										</div>
-										<a href="catalog/index.html" class="popularBlock__catalog_prices-block">
-											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="popularBlock__catalog">
-								<div class="popularBlock__catalog-block">
-									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
-								</div>
-								<div class="popularBlock__catalog_text">
-									<p class="popularBlock__catalog_articul">Артикул 23936</p>
-									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
-									<div class="popularBlock__catalog_info_price">
-										<div class="popularBlock__catalog_prices">
-											<p class="popularBlock__catalog_prices-piece">
-												2 502 
-												<sup class="popularBlock__catalog_prices-sup">40</sup>
-												 / шт.
-											</p>
-											<p class="popularBlock__catalog_prices-ton">
-												72 864 
-												<sup class="popularBlock__catalog_prices-sup">00</sup>
-												 / т.
-											</p>
-										</div>
-										<a href="catalog/index.html" class="popularBlock__catalog_prices-block">
-											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="popularBlock__catalog">
-								<div class="popularBlock__catalog-block">
-									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
-								</div>
-								<div class="popularBlock__catalog_text">
-									<p class="popularBlock__catalog_articul">Артикул 23936</p>
-									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
-									<div class="popularBlock__catalog_info_price">
-										<div class="popularBlock__catalog_prices">
-											<p class="popularBlock__catalog_prices-piece">
-												2 502 
-												<sup class="popularBlock__catalog_prices-sup">40</sup>
-												 / шт.
-											</p>
-											<p class="popularBlock__catalog_prices-ton">
-												72 864 
-												<sup class="popularBlock__catalog_prices-sup">00</sup>
-												 / т.
-											</p>
-										</div>
-										<a href="catalog/index.html" class="popularBlock__catalog_prices-block">
-											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="popularBlock__catalog">
-								<div class="popularBlock__catalog-block">
-									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
-								</div>
-								<div class="popularBlock__catalog_text">
-									<p class="popularBlock__catalog_articul">Артикул 23936</p>
-									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
-									<div class="popularBlock__catalog_info_price">
-										<div class="popularBlock__catalog_prices">
-											<p class="popularBlock__catalog_prices-piece">
-												2 502 
-												<sup class="popularBlock__catalog_prices-sup">40</sup>
-												 / шт.
-											</p>
-											<p class="popularBlock__catalog_prices-ton">
-												72 864 
-												<sup class="popularBlock__catalog_prices-sup">00</sup>
-												 / т.
-											</p>
-										</div>
-										<a href="catalog/index.html" class="popularBlock__catalog_prices-block">
-											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="popularBlock__catalog">
-								<div class="popularBlock__catalog-block">
-									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
-								</div>
-								<div class="popularBlock__catalog_text">
-									<p class="popularBlock__catalog_articul">Артикул 23936</p>
-									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
-									<div class="popularBlock__catalog_info_price">
-										<div class="popularBlock__catalog_prices">
-											<p class="popularBlock__catalog_prices-piece">
-												2 502 
-												<sup class="popularBlock__catalog_prices-sup">40</sup>
-												 / шт.
-											</p>
-											<p class="popularBlock__catalog_prices-ton">
-												72 864 
-												<sup class="popularBlock__catalog_prices-sup">00</sup>
-												 / т.
-											</p>
-										</div>
-										<a href="catalog/index.html" class="popularBlock__catalog_prices-block">
-											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="popularBlock__bottom-line">
-						<div class="popularBlock__bottom-line-active"></div>
-					</div>
-				</div>
-			</section>
-			<section id="services">
-				<div class="services">
-					<div class="services__header">
-							<p class="services__header_text">Услуги</p>
-					</div>
-					<div  class="services__items">
-						<div class="services__items__self services__items__self-first">
-							<div class="services__items__self-left-block"></div>
-							<div class="services__items__self-block">
-								<p class="services__items__self-block_text">Лазерная резка металла</p>
-							</div>
-						</div>
-						<div class="services__items__self services__items__self-second">
-							<div class="services__items__self-left-block" ></div>
-							<div class="services__items__self-block">
-								<p class="services__items__self-block_text">Резка металла в размер</p>
-							</div>
-						</div>
-						<div class="services__items__self services__items__self-thrid">
-							<div class="services__items__self-left-block"></div>
-							<div class="services__items__self-block">
-								<p class="services__items__self-block_text">Гибка металла</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 			<section id="stocks">
 				<div class="stocks">
 					<div class="stocks__header">
@@ -388,6 +205,203 @@
 					</div>
 					<div class="popularBlock__bottom-line">
 						<div class="popularBlock__bottom-line-active"></div>
+					</div>
+				</div>
+			</section>
+			<section id="catalog">
+				<div class="popularBlock">
+					<div class="popularBlock__header">
+						<h2 class="popularBlock__header-name">Популярное</h2>
+						<a class="popularBlock__header-href" href="catalog/index.html">
+							<p class="popularBlock__header-href_text">Каталог</p>
+							<img class="popularBlock__header-href_img" src="img/popular/Line.png">
+						</a>
+					</div>
+					<div class="popularBlock__block-catalog">
+						<div class="popularBlock__all-catalog">
+							<div class="popularBlock__catalog">
+								<div class="popularBlock__catalog-block">
+									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
+								</div>
+								<div class="popularBlock__catalog_text">
+									<p class="popularBlock__catalog_articul">Артикул 23936</p>
+									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
+									<div class="popularBlock__catalog_info_price">
+										<div class="popularBlock__catalog_prices">
+											<p class="popularBlock__catalog_prices-piece">2 502 
+												<sup class="popularBlock__catalog_prices-sup">40</sup>
+												 / шт.
+											</p>
+											<p class="popularBlock__catalog_prices-ton">72 864 
+												<sup class="popularBlock__catalog_prices-sup">00</sup>
+												 / т.
+											</p>
+										</div>
+										<a href="pageBasket/Корзина.html" class="popularBlock__catalog_prices-block">
+											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="popularBlock__catalog">
+								<div class="popularBlock__catalog-block">
+									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
+								</div>
+								<div class="popularBlock__catalog_text">
+									<p class="popularBlock__catalog_articul">Артикул 23936</p>
+									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
+									<div class="popularBlock__catalog_info_price">
+										<div class="popularBlock__catalog_prices">
+											<p class="popularBlock__catalog_prices-piece">2 502 
+												<sup class="popularBlock__catalog_prices-sup">40</sup>
+												 / шт.
+											</p>
+											<p class="popularBlock__catalog_prices-ton">72 864 
+												<sup class="popularBlock__catalog_prices-sup">00</sup>
+												 / т.
+											</p>
+										</div>
+										<a href="pageBasket/Корзина.html" class="popularBlock__catalog_prices-block">
+											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="popularBlock__catalog">
+								<div class="popularBlock__catalog-block">
+									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
+								</div>
+								<div class="popularBlock__catalog_text">
+									<p class="popularBlock__catalog_articul">Артикул 23936</p>
+									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
+									<div class="popularBlock__catalog_info_price">
+										<div class="popularBlock__catalog_prices">
+											<p class="popularBlock__catalog_prices-piece">
+												2 502 
+												<sup class="popularBlock__catalog_prices-sup">40</sup>
+												 / шт.
+											</p>
+											<p class="popularBlock__catalog_prices-ton">
+												72 864 
+												<sup class="popularBlock__catalog_prices-sup">00</sup>
+												 / т.
+											</p>
+										</div>
+										<a href="pageBasket/Корзина.html" class="popularBlock__catalog_prices-block">
+											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="popularBlock__catalog">
+								<div class="popularBlock__catalog-block">
+									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
+								</div>
+								<div class="popularBlock__catalog_text">
+									<p class="popularBlock__catalog_articul">Артикул 23936</p>
+									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
+									<div class="popularBlock__catalog_info_price">
+										<div class="popularBlock__catalog_prices">
+											<p class="popularBlock__catalog_prices-piece">
+												2 502 
+												<sup class="popularBlock__catalog_prices-sup">40</sup>
+												 / шт.
+											</p>
+											<p class="popularBlock__catalog_prices-ton">
+												72 864 
+												<sup class="popularBlock__catalog_prices-sup">00</sup>
+												 / т.
+											</p>
+										</div>
+										<a href="pageBasket/Корзина.html" class="popularBlock__catalog_prices-block">
+											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="popularBlock__catalog">
+								<div class="popularBlock__catalog-block">
+									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
+								</div>
+								<div class="popularBlock__catalog_text">
+									<p class="popularBlock__catalog_articul">Артикул 23936</p>
+									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
+									<div class="popularBlock__catalog_info_price">
+										<div class="popularBlock__catalog_prices">
+											<p class="popularBlock__catalog_prices-piece">
+												2 502 
+												<sup class="popularBlock__catalog_prices-sup">40</sup>
+												 / шт.
+											</p>
+											<p class="popularBlock__catalog_prices-ton">
+												72 864 
+												<sup class="popularBlock__catalog_prices-sup">00</sup>
+												 / т.
+											</p>
+										</div>
+										<a href="pageBasket/Корзина.html" class="popularBlock__catalog_prices-block">
+											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="popularBlock__catalog">
+								<div class="popularBlock__catalog-block">
+									<img class="popularBlock__catalog-block_img" src="img/popular/product.png">
+								</div>
+								<div class="popularBlock__catalog_text">
+									<p class="popularBlock__catalog_articul">Артикул 23936</p>
+									<p class="popularBlock__catalog_descreption">Лист ХК 1.2 1.25м 2.5м 08пссп 16523</p>
+									<div class="popularBlock__catalog_info_price">
+										<div class="popularBlock__catalog_prices">
+											<p class="popularBlock__catalog_prices-piece">
+												2 502 
+												<sup class="popularBlock__catalog_prices-sup">40</sup>
+												 / шт.
+											</p>
+											<p class="popularBlock__catalog_prices-ton">
+												72 864 
+												<sup class="popularBlock__catalog_prices-sup">00</sup>
+												 / т.
+											</p>
+										</div>
+										<a href="pageBasket/Корзина.html" class="popularBlock__catalog_prices-block">
+											<img class="popularBlock__catalog_prices-block_img" src="img/popular/basket.png">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popularBlock__bottom-line">
+						<div class="popularBlock__bottom-line-active"></div>
+					</div>
+				</div>
+			</section>
+			<section id="services">
+				<div class="services">
+					<div class="services__header">
+							<p class="services__header_text">Услуги</p>
+					</div>
+					<div  class="services__items">
+						<div class="services__items__self services__items__self-first">
+							<div class="services__items__self-left-block"></div>
+							<div class="services__items__self-block">
+								<p class="services__items__self-block_text">Лазерная резка металла</p>
+							</div>
+						</div>
+						<div class="services__items__self services__items__self-second">
+							<div class="services__items__self-left-block" ></div>
+							<div class="services__items__self-block">
+								<p class="services__items__self-block_text">Резка металла в размер</p>
+							</div>
+						</div>
+						<div class="services__items__self services__items__self-thrid">
+							<div class="services__items__self-left-block"></div>
+							<div class="services__items__self-block">
+								<p class="services__items__self-block_text">Гибка металла</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -554,13 +568,19 @@
 				<div class="menu-footer__footer">
 					<div class="menu-footer__footer-social">
 						<div class="menu-footer__footer-social_item menu-footer__footer-social_fb">
-							<img class="menu-footer__footer-social_item-img" src="img/footer/fb.svg">
+							<a href="#">
+								<img class="menu-footer__footer-social_item-img" src="img/footer/fb.svg">
+							</a>
 						</div>
 						<div class="menu-footer__footer-social_item">
-							<img class="menu-footer__footer-social_item-img" src="img/footer/insta.svg">
+							<a href="#">
+								<img class="menu-footer__footer-social_item-img" src="img/footer/insta.svg">
+							</a>
 						</div>
 						<div class="menu-footer__footer-social_item">
-							<img class="menu-footer__footer-social_item-img" src="img/footer/vk.svg">
+							<a href="#">
+								<img class="menu-footer__footer-social_item-img" src="img/footer/vk.svg">
+							</a>
 						</div>
 					</div>
 					<div class="menu-footer__footer-rights">
@@ -571,5 +591,4 @@
 		</footer>
 	</body>
 	<script src="index.js"></script>
-	<script src="indexToBasket.js"></script>
 </html>

@@ -8,7 +8,7 @@
 	src: url('../fonts/Montserrat.ttf');
 }
 
-
+@media (min-width: 500px){
 
 
 @keyframes backWapperMenu{
@@ -95,7 +95,7 @@ header a{
 	font-size: 14px;
 	/*margin-left: 157px;*/
 	margin-left: 30px;
-	margin-right: 0px;
+	margin-right: 50px;
 	cursor: pointer;
 }
 
@@ -500,4 +500,6 @@ header a{
 	margin-left: auto;
 	margin-right: 0px;
 	margin-top: 38px;
+}
+
 }

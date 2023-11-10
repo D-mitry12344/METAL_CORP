@@ -9,7 +9,7 @@
 }
 
 
-
+@media (min-width: 500px){
 
 @keyframes backWapperMenu{
  0%{
@@ -95,7 +95,7 @@ header a{
 	font-size: 14px;
 	/*margin-left: 157px;*/
 	margin-left: 30px;
-	margin-right: 0px;
+	margin-right: 50px;
 	cursor: pointer;
 }
 
@@ -313,7 +313,7 @@ header a{
 .navigation-pages__block-href:hover{
 	color: black;
 }
-/*Page*/
+/*Page*//*
 .contentBasket-block__name{
 	margin-left: 70px;
 }
@@ -341,7 +341,7 @@ header a{
 .contentBasket-block__info__btn-catalog{
 	width: 4.8em;
 	height: 2em;
-	padding: /*40px*/0.5% 2.3%;
+	padding: /0.5% 2.3%;
 	margin-right: auto;
 	margin-left: auto;
 	background: #C0511F;
@@ -360,7 +360,7 @@ header a{
 
 .contentBasket-block__info__btn-catalog:hover{
 	opacity: 0.7;
-}
+}*/
 
 /*name and search*/
 
@@ -437,14 +437,14 @@ header a{
 	width: 94.9em;
 	height: 631px;
 	overflow-x: none;
-	margin-top: -115px;
+	margin-top: -117px;
 	margin-left: 120px;
 	
 }
 
 /*FOOTER*/
 .menu-footer{
-	margin-top: 200px;
+	margin-top: 193px;
 	padding-top: 40px;
 	padding-bottom: 150px;
 	background: #ECECEC;
@@ -528,4 +528,5 @@ header a{
 	margin-left: auto;
 	margin-right: 0px;
 	margin-top: 38px;
+}
 }

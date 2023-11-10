@@ -9,7 +9,7 @@
 }
 
 
-
+@media (min-width: 500px){
 
 @keyframes backWapperMenu{
  0%{
@@ -95,7 +95,7 @@ header a{
 	font-size: 14px;
 	/*margin-left: 157px;*/
 	margin-left: 30px;
-	margin-right: 0px;
+	margin-right: 50px;
 	cursor: pointer;
 }
 
@@ -356,6 +356,7 @@ header a{
 	text-align: center;
 	text-decoration: none;
 	transition-duration: 0.3s;
+	cursor: pointer;
 }
 
 .contentBasket-block__info__btn-catalog:hover{
@@ -466,12 +467,12 @@ header a{
 }
 .contentBasket-block__info-all-profucts_table_content-name_clear{
 	transition-duration: 0.3s;
+	cursor: pointer;
 }
 
 .contentBasket-block__info-all-profucts_table_content-name_clear:hover{
 	opacity: 0.7;
 	transform: scale(1.2);
-	background: rgb(0,0,0, 0.3);
 }
 
 .contentBasket-block__info-footer{
@@ -496,6 +497,7 @@ header a{
 	margin-left: 90px;
 	margin-top: 190px;
 	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
 .contentBasket-block__info-footer__btn-catalog_text{
@@ -517,6 +519,7 @@ header a{
 .contentBasket-block__info-footer_price__btn{
 	width: 160px;
 	height: 42px;
+	cursor: pointer;
 	padding-left: 60px;
 	font-family: 'Lato';
 	font-style: normal;
@@ -651,4 +654,6 @@ header a{
 	margin-left: auto;
 	margin-right: 0px;
 	margin-top: 38px;
+}
+
 }

@@ -1,0 +1,29 @@
+@media (min-width: 0) and (max-width: 500px){
+
+body{
+	width: 375px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.name-search-block__name{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	margin-left: 10px;
+}
+
+.container-content{
+	width:350px;
+	margin-left: 10px;
+	margin-top: 60px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+}

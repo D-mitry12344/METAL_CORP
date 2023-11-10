@@ -1,0 +1,185 @@
+@media (min-width: 0) and (max-width: 500px){
+
+body{
+	width: 375px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.name-search-block__name{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	margin-left: 10px;
+}
+
+.name-search-block__block-img{
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+.name-search-block__block-img_icon{
+	position: absolute;
+	margin-left: 15px;
+	border-right: 1px solid #F0F0F0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+}
+
+.name-search-block__block-img_text{
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	border: 1px solid #F0F0F0;
+	width: 80%;
+	padding-left: 60px;
+	height:48px;
+}
+
+.name-search-block__block-img_text:focus{
+	outline: none;
+}
+
+/*container*/
+
+.container{
+	margin-bottom: 0;
+	width: 345px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product-all{
+	margin-top: 40px;
+	width: 345px;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+.product-all_tb__property{
+	background: #f0f0f0;
+
+}
+
+.product-all_tb__property-item{
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #545454;
+	line-height: 10px;
+}
+
+.product-all_tb__property-item, .product-all__self__item-list{
+	padding: 30px 0px 30px 10px;
+}
+
+.product-all__self__item{
+	padding-top: 40px;
+	height: 150px;
+	padding-bottom: 30px;
+	border-bottom:  1px solid #EBEAF0;
+	
+}
+
+.product-all__self__item-list{
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.product-all__self__item__basket__block{
+	background: #C0511F;
+	border-radius: 10px;
+	width: 25.82px;
+	height:26px;
+	padding-left: 10px;
+	padding-top: 10px;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+.product-all__self__item__basket__block:hover{
+	opacity: 0.6;
+	transform: scale(1.2);
+}
+.product-all__self__item__name{
+	margin-left: 20px;
+}
+
+.product-all__self__item__name-text{
+	color: #C0511F;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+.product-all__self__item__name-text:hover{
+	opacity: 0.6;
+}
+
+.product-all_tb__property__size__block, .product-all_tb__property__brend__block{
+	display: flex;
+}
+
+.product-all_tb__property__brend__block-img, .product-all_tb__property__size__block-img{
+	padding-left: 10px;
+}
+
+.product-all__self__item__prise-second, .product-all_tb__property__price-second, .product-all_tb__property__length ,
+.product-all_tb__property__size, .product-all_tb__property__brend{
+	display: none;
+}
+
+.product-all__self__item__length, .product-all__self__item__brend,
+.product-all__self__item__size{
+	position: absolute;
+	padding: 0px;
+	width: 50px;
+}
+
+.product-all__self__item__price-first{
+	padding: 0px;
+	margin:0;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 60px;
+	width:50px;
+}
+
+.product-all__self__item__price-first p{
+	padding: 0px;
+	margin: 0;
+	width:50px;
+}
+
+.product-all__self__item__size{
+	margin-top: 100px;
+	left: 11%;
+}
+
+.product-all__self__item__length{
+	margin-top: 100px;
+	left: 36%;
+}
+
+.product-all__self__item__brend{
+	margin-top: 100px;
+	left: 20%;
+}
+
+.product-all_tb__property__price-first-description{
+	width: 100px;
+}
+
+
+}

@@ -19,6 +19,36 @@ function init() {
 		preset: "twirl#redDotIcon" // Тип метки
 	});
 	
+	let myGeoObject = new ymaps.GeoObject({
+            // Описываем геометрию геообъекта.
+            geometry: {
+                // Тип геометрии - "Ломаная линия".
+                type: "LineString",
+                // Указываем координаты вершин ломаной.
+                coordinates: [
+                    [55.732770, 37.388213],
+		 			[55.733516, 37.388222]
+                ]
+            },
+            // Описываем свойства геообъекта.
+            properties:{
+                // Содержимое хинта.
+                hintContent: "Я геообъект",
+                // Содержимое балуна.
+                
+            }
+        }, {
+            // Задаем опции геообъекта.
+            // Включаем возможность перетаскивания ломаной.
+            draggable: false,
+            // Цвет линии.
+            strokeColor: "#C40000",
+            // Ширина линии.
+            strokeWidth: 5
+        });
+	
+	myMap.geoObjects.add(myGeoObject)
+
 	myMap.geoObjects.add(myPlacemark); // Добавление метки
 	myPlacemark.balloon.open(); // Открытие подсказки метки	
 };
